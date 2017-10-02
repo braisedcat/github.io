@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/10/01/中大东校路由器/index.html">
 <meta property="og:site_name" content="FreeTime">
 <meta property="og:description" content="实现 中大东校h3c认证 网线及wifi稳定的ipv6 ss&amp;amp;gfwlist  准备  1:K2路由器,PSG1218 2:固件,github项目 :boytm/openwrt-psg1218.  3:中大h3c认证,github项目:renbaoke/h3c,编译好的文件h3c 4:winscp和putty.主要在luci界面配置.                  配置  基本配置(非">
-<meta property="og:updated_time" content="2017-10-01T07:47:09.049Z">
+<meta property="og:updated_time" content="2017-10-02T03:11:08.127Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="中大东校路由器">
 <meta name="twitter:description" content="实现 中大东校h3c认证 网线及wifi稳定的ipv6 ss&amp;amp;gfwlist  准备  1:K2路由器,PSG1218 2:固件,github项目 :boytm/openwrt-psg1218.  3:中大h3c认证,github项目:renbaoke/h3c,编译好的文件h3c 4:winscp和putty.主要在luci界面配置.                  配置  基本配置(非">
@@ -155,10 +155,10 @@ arch ramips_24kec 300
 <pre><code>ip6tables -t nat -A POSTROUTING -o eth0.2 -j MASQUERADE
 ip6tables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 ip6tables -A FORWARD -i br-lan -j ACCEPT
-</code></pre><p>在<code>/etc/hotplug.d/iface</code>下添加文件<code>90-ipv6</code><br>内容为:</p>
+</code></pre><p>获取ipv6网关,开头为WAN口ipv6地址的前4段,形如<code>2001:250:3002:xxxx::1</code><br>在<code>/etc/hotplug.d/iface</code>下添加文件<code>90-ipv6</code><br>内容为:</p>
 <pre><code>#!/bin/sh
 [ &quot;$ACTION&quot; = ifup ] || exit 0
-route -A inet6 add default gw 2001:250:3002:4480::1
+route -A inet6 add default gw 2001:250:3002:xxxx::1
 </code></pre><p>并给予权限<br><code>chmod +x /etc/hotplug.d/iface/90-ipv6</code><br>重启,一段时间后观察<strong>总览-&gt;IPv6 WAN状态</strong>是否获得ipv6地址.有时会需要较长时间.然后测试ipv6是否成功:<a href="http://test-ipv6.com/" target="_blank" rel="external">test-ipv6.com</a>.</p>
 </li>
 </ul>
