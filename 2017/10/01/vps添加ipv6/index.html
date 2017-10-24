@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="环境  bandwagon 10G KVM vps 安装新OS:Ubuntu 16.04 x86_64,操作比较熟悉  添加ipv6  注册 tunnelbroker,然后点击Create Regular Tunnel,接着输入vps地址,选择地址来创建ipv6隧道. 点击Example Configurations,选择OS:Debian/Ubuntu.复制框里内容粘贴至vps的/etc/net">
+    <meta name="description" content="环境   bandwagon 10G KVM vps 安装新OS:Ubuntu 16.04 x86_64,操作比较熟悉   添加ipv6   注册 tunnelbroker,然后点击Create Regular Tunnel,接着输入vps地址,选择地址来创建ipv6隧道. 点击Example Configurations,选择OS:Debian/Ubuntu.复制框里内容粘贴至vps的/etc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vps基本设置">
 <meta property="og:url" content="http://yoursite.com/2017/10/01/vps添加ipv6/index.html">
 <meta property="og:site_name" content="FreeTime">
-<meta property="og:description" content="环境  bandwagon 10G KVM vps 安装新OS:Ubuntu 16.04 x86_64,操作比较熟悉  添加ipv6  注册 tunnelbroker,然后点击Create Regular Tunnel,接着输入vps地址,选择地址来创建ipv6隧道. 点击Example Configurations,选择OS:Debian/Ubuntu.复制框里内容粘贴至vps的/etc/net">
+<meta property="og:description" content="环境   bandwagon 10G KVM vps 安装新OS:Ubuntu 16.04 x86_64,操作比较熟悉   添加ipv6   注册 tunnelbroker,然后点击Create Regular Tunnel,接着输入vps地址,选择地址来创建ipv6隧道. 点击Example Configurations,选择OS:Debian/Ubuntu.复制框里内容粘贴至vps的/etc">
 <meta property="og:updated_time" content="2017-10-16T04:06:05.406Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vps基本设置">
-<meta name="twitter:description" content="环境  bandwagon 10G KVM vps 安装新OS:Ubuntu 16.04 x86_64,操作比较熟悉  添加ipv6  注册 tunnelbroker,然后点击Create Regular Tunnel,接着输入vps地址,选择地址来创建ipv6隧道. 点击Example Configurations,选择OS:Debian/Ubuntu.复制框里内容粘贴至vps的/etc/net">
+<meta name="twitter:description" content="环境   bandwagon 10G KVM vps 安装新OS:Ubuntu 16.04 x86_64,操作比较熟悉   添加ipv6   注册 tunnelbroker,然后点击Create Regular Tunnel,接着输入vps地址,选择地址来创建ipv6隧道. 点击Example Configurations,选择OS:Debian/Ubuntu.复制框里内容粘贴至vps的/etc">
     
     
         
@@ -97,7 +97,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境"><span class="toc-number">1.</span> <span class="toc-text">环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加ipv6"><span class="toc-number">2.</span> <span class="toc-text">添加ipv6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SS"><span class="toc-number">3.</span> <span class="toc-text">SS</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境"><span class="toc-number">1.</span> <span class="toc-text"> 环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加ipv6"><span class="toc-number">2.</span> <span class="toc-text"> 添加ipv6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ss"><span class="toc-number">3.</span> <span class="toc-text"> SS</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -131,34 +131,46 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><hr>
+    <h2 id="环境"><a class="markdownIt-Anchor" href="#环境"></a> 环境</h2>
+<hr>
 <ul>
 <li>bandwagon 10G KVM vps</li>
 <li>安装新OS:Ubuntu 16.04 x86_64,操作比较熟悉</li>
 </ul>
-<h2 id="添加ipv6"><a href="#添加ipv6" class="headerlink" title="添加ipv6"></a>添加ipv6</h2><hr>
+<h2 id="添加ipv6"><a class="markdownIt-Anchor" href="#添加ipv6"></a> 添加ipv6</h2>
+<hr>
 <ol>
 <li>注册 <a href="https://tunnelbroker.net" target="_blank" rel="external">tunnelbroker</a>,然后点击<a href="https://tunnelbroker.net/new_tunnel.php" target="_blank" rel="external">Create Regular Tunnel</a>,接着输入vps地址,选择地址来创建ipv6隧道.</li>
 <li>点击Example Configurations,选择OS:Debian/Ubuntu.复制框里内容粘贴至vps的<code>/etc/network/interfaces</code>文件末尾.</li>
 <li>启用:  <code>ifup he-ipv6</code></li>
 </ol>
-<h2 id="SS"><a href="#SS" class="headerlink" title="SS"></a>SS</h2><ol>
-<li><p>安装</p>
+<h2 id="ss"><a class="markdownIt-Anchor" href="#ss"></a> SS</h2>
+<ol>
+<li>安装</li>
+</ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">apt-get update</div><div class="line">apt-get install python-pip</div><div class="line">sudo apt-get install python-setuptools</div><div class="line">pip install shadowsocks</div></pre></td></tr></table></figure>
-</li>
-<li><p>配置<br><code>vi /etc/shadowsocks.json</code><br>粘贴以下内容,修改 server_port 和 password内容.server不用修改,支持ipv6</p>
-<pre><code>{
- &quot;server&quot;:&quot;::&quot;, 
- &quot;server_port&quot;:1234,
- &quot;local_address&quot;: &quot;127.0.0.1&quot;,
- &quot;local_port&quot;:1080,
- &quot;password&quot;:&quot;password&quot;,
- &quot;timeout&quot;:300,
- &quot;method&quot;:&quot;aes-256-cfb&quot;,
- &quot;fast_open&quot;: false
+<ol start="2">
+<li>配置<br>
+<code>vi /etc/shadowsocks.json</code><br>
+粘贴以下内容,修改 server_port 和 password内容.server不用修改,支持ipv6</li>
+</ol>
+<pre class="highlight"><code class="">{
+    &quot;server&quot;:&quot;::&quot;, 
+    &quot;server_port&quot;:1234,
+    &quot;local_address&quot;: &quot;127.0.0.1&quot;,
+    &quot;local_port&quot;:1080,
+    &quot;password&quot;:&quot;password&quot;,
+    &quot;timeout&quot;:300,
+    &quot;method&quot;:&quot;aes-256-cfb&quot;,
+    &quot;fast_open&quot;: false
 }
-</code></pre></li>
-<li>添加开机启动<br><code>vi /etc/rc.local</code><br>在exit 0前添加启动命令:<br><code>ssserver -c /etc/shadowsocks.json -d start</code><br><code>ifup he-ipv6</code></li>
+</code></pre>
+<ol start="3">
+<li>添加开机启动<br>
+<code>vi /etc/rc.local</code><br>
+在exit 0前添加启动命令:<br>
+<code>ssserver -c /etc/shadowsocks.json -d start</code><br>
+<code>ifup he-ipv6</code></li>
 </ol>
 
   </div>
@@ -186,7 +198,7 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境"><span class="toc-number">1.</span> <span class="toc-text">环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加ipv6"><span class="toc-number">2.</span> <span class="toc-text">添加ipv6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SS"><span class="toc-number">3.</span> <span class="toc-text">SS</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境"><span class="toc-number">1.</span> <span class="toc-text"> 环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加ipv6"><span class="toc-number">2.</span> <span class="toc-text"> 添加ipv6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ss"><span class="toc-number">3.</span> <span class="toc-text"> SS</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
