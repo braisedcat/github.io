@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="实现  中大东校h3c认证 网线及wifi稳定的ipv6 ss&amp;amp;gfwlist   准备   1:K2路由器,PSG1218 2:固件,github项目 :boytm/openwrt-psg1218. 3:中大h3c认证,github项目:renbaoke/h3c,编译好的文件h3c 4:winscp和putty.主要在luci界面配置.   配置   h3c认证  使用winscp上传">
+    <meta name="description" content="实现 中大东校h3c认证 网线及wifi稳定的ipv6 ss&amp;amp;gfwlist  准备  1:K2路由器,PSG1218 2:固件,github项目 :boytm/openwrt-psg1218.  3:中大h3c认证,github项目:renbaoke/h3c,编译好的文件h3c 4:winscp和putty.主要在luci界面配置.                  配置 h3c认证 使">
 <meta property="og:type" content="article">
 <meta property="og:title" content="中大东校路由器">
 <meta property="og:url" content="http://yoursite.com/2017/10/01/中大东校路由器/index.html">
 <meta property="og:site_name" content="FreeTime">
-<meta property="og:description" content="实现  中大东校h3c认证 网线及wifi稳定的ipv6 ss&amp;amp;gfwlist   准备   1:K2路由器,PSG1218 2:固件,github项目 :boytm/openwrt-psg1218. 3:中大h3c认证,github项目:renbaoke/h3c,编译好的文件h3c 4:winscp和putty.主要在luci界面配置.   配置   h3c认证  使用winscp上传">
+<meta property="og:description" content="实现 中大东校h3c认证 网线及wifi稳定的ipv6 ss&amp;amp;gfwlist  准备  1:K2路由器,PSG1218 2:固件,github项目 :boytm/openwrt-psg1218.  3:中大h3c认证,github项目:renbaoke/h3c,编译好的文件h3c 4:winscp和putty.主要在luci界面配置.                  配置 h3c认证 使">
 <meta property="og:updated_time" content="2017-10-02T05:12:19.631Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="中大东校路由器">
-<meta name="twitter:description" content="实现  中大东校h3c认证 网线及wifi稳定的ipv6 ss&amp;amp;gfwlist   准备   1:K2路由器,PSG1218 2:固件,github项目 :boytm/openwrt-psg1218. 3:中大h3c认证,github项目:renbaoke/h3c,编译好的文件h3c 4:winscp和putty.主要在luci界面配置.   配置   h3c认证  使用winscp上传">
+<meta name="twitter:description" content="实现 中大东校h3c认证 网线及wifi稳定的ipv6 ss&amp;amp;gfwlist  准备  1:K2路由器,PSG1218 2:固件,github项目 :boytm/openwrt-psg1218.  3:中大h3c认证,github项目:renbaoke/h3c,编译好的文件h3c 4:winscp和putty.主要在luci界面配置.                  配置 h3c认证 使">
     
     
         
@@ -95,7 +95,7 @@
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#实现"><span class="toc-number">1.</span> <span class="toc-text"> 实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备"><span class="toc-number">2.</span> <span class="toc-text"> 准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">3.</span> <span class="toc-text"> 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#h3c认证"><span class="toc-number">3.1.</span> <span class="toc-text"> h3c认证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基本配置非必须"><span class="toc-number">3.2.</span> <span class="toc-text"> 基本配置(非必须)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ipv6配置"><span class="toc-number">3.3.</span> <span class="toc-text"> ipv6配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">4.</span> <span class="toc-text"> 总结</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#实现"><span class="toc-number">1.</span> <span class="toc-text">实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备"><span class="toc-number">2.</span> <span class="toc-text">准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">3.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#h3c认证"><span class="toc-number">3.1.</span> <span class="toc-text">h3c认证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基本配置-非必须"><span class="toc-number">3.2.</span> <span class="toc-text">基本配置(非必须)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ipv6配置"><span class="toc-number">3.3.</span> <span class="toc-text">ipv6配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">4.</span> <span class="toc-text">总结</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -129,92 +129,54 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h2 id="实现"><a class="markdownIt-Anchor" href="#实现"></a> 实现</h2>
-<ul>
+    <h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><ul>
 <li>中大东校h3c认证</li>
 <li>网线及wifi稳定的ipv6</li>
 <li>ss&amp;gfwlist</li>
 </ul>
-<h2 id="准备"><a class="markdownIt-Anchor" href="#准备"></a> 准备</h2>
-<hr>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><hr>
 <ul>
 <li>1:K2路由器,PSG1218</li>
-<li>2:固件,github项目 :<a href="https://github.com/boytm/openwrt-psg1218" target="_blank" rel="external">boytm/openwrt-psg1218</a>.</li>
+<li>2:固件,github项目 :<a href="https://github.com/boytm/openwrt-psg1218" target="_blank" rel="external">boytm/openwrt-psg1218</a>. </li>
 <li>3:中大h3c认证,github项目:<a href="https://github.com/renbaoke/h3c" target="_blank" rel="external">renbaoke/h3c</a>,编译好的文件<a href="https://drive.google.com/file/d/0B77UQDWLTo5RdlpyOUM3VnlpdzQ/view?usp=sharing" target="_blank" rel="external">h3c</a></li>
-<li>4:winscp和putty.主要在luci界面配置.</li>
+<li>4:winscp和putty.主要在luci界面配置.                </li>
 </ul>
-<h2 id="配置"><a class="markdownIt-Anchor" href="#配置"></a> 配置</h2>
-<hr>
-<h3 id="h3c认证"><a class="markdownIt-Anchor" href="#h3c认证"></a> h3c认证</h3>
-<ul>
-<li>使用winscp上传<strong>h3c</strong>文件至路由器,如<code>/etc/</code>路径下,<br>
-给于权限<br>
-<code>chmod +x /etc/h3c</code><br>
-启动命令为:<br>
-<code>echo password | /etc/h3c -i eth0.2 -u username</code></li>
-<li>添加至<strong>系统-&gt;启动项-&gt;本地启动脚本</strong> <code>exit 0</code>之前设置为开机启动.<br>
-<code>ps:</code>该h3c认证客户端的优点在于兼容性较好,通常情况下网络断开后不需要重启路由器或输入启动命令,h3c会自动重连.</li>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><hr>
+<h3 id="h3c认证"><a href="#h3c认证" class="headerlink" title="h3c认证"></a>h3c认证</h3><ul>
+<li>使用winscp上传<strong>h3c</strong>文件至路由器,如<code>/etc/</code>路径下,<br>给于权限<br><code>chmod +x /etc/h3c</code><br>启动命令为:<br><code>echo password | /etc/h3c -i eth0.2 -u username</code></li>
+<li>添加至<strong>系统-&gt;启动项-&gt;本地启动脚本</strong> <code>exit 0</code>之前设置为开机启动.<br><code>ps:</code>该h3c认证客户端的优点在于兼容性较好,通常情况下网络断开后不需要重启路由器或输入启动命令,h3c会自动重连. </li>
 </ul>
-<h3 id="基本配置非必须"><a class="markdownIt-Anchor" href="#基本配置非必须"></a> 基本配置(非必须)</h3>
-<ul>
-<li>
-<p><strong>system-&gt;Language and Style</strong>选择<code>chinese</code>更改语言</p>
-</li>
-<li>
-<p>在<strong>系统-&gt;软件包-&gt;OPKG-配置</strong> 下添加以下代码,否则无法安装自己上传的ipk.</p>
-<p>arch all 100<br>
-arch ralink 200<br>
-arch ramips 300<br>
-arch ramips_24kec 300</p>
-</li>
-<li>
-<p>添加中科大镜像:<br>
-注释<strong>系统-&gt;软件包-&gt;Distribution feeds</strong>内容.添加:</p>
-</li>
-</ul>
+<h3 id="基本配置-非必须"><a href="#基本配置-非必须" class="headerlink" title="基本配置(非必须)"></a>基本配置(非必须)</h3><ul>
+<li><strong>system-&gt;Language and Style</strong>选择<code>chinese</code>更改语言</li>
+<li><p>在<strong>系统-&gt;软件包-&gt;OPKG-配置</strong> 下添加以下代码,否则无法安装自己上传的ipk.</p>
+<pre><code>arch all 100
+arch ralink 200
+arch ramips 300
+arch ramips_24kec 300
+</code></pre></li>
+<li><p>添加中科大镜像:<br>注释<strong>系统-&gt;软件包-&gt;Distribution feeds</strong>内容.添加:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">src/gz chaos_calmer_base http://openwrt.mirrors.ustc.edu.cn//chaos_calmer/15.05.1/ramips/mt7620/packages/base</div><div class="line">src/gz chaos_calmer_luci http://openwrt.mirrors.ustc.edu.cn//chaos_calmer/15.05.1/ramips/mt7620/packages/luci</div><div class="line">src/gz chaos_calmer_packages http://openwrt.mirrors.ustc.edu.cn//chaos_calmer/15.05.1/ramips/mt7620/packages/packages</div><div class="line">src/gz chaos_calmer_routing http://openwrt.mirrors.ustc.edu.cn//chaos_calmer/15.05.1/ramips/mt7620/packages/routing</div><div class="line">src/gz chaos_calmer_telephony http://openwrt.mirrors.ustc.edu.cn//chaos_calmer/15.05.1/ramips/mt7620/packages/telephony</div><div class="line">src/gz chaos_calmer_management http://openwrt.mirrors.ustc.edu.cn//chaos_calmer/15.05.1/ramips/mt7620/packages/management</div></pre></td></tr></table></figure>
-<ul>
-<li><code>opkg update</code><br>
-<code>opkg install iputils-tracepath6</code> ,可以trace ipv6地址获取网关.</li>
-</ul>
-<h3 id="ipv6配置"><a class="markdownIt-Anchor" href="#ipv6配置"></a> ipv6配置</h3>
-<ul>
-<li>
-<p>删除<strong>网络-&gt;接口</strong>的 IPv6 ULA前缀</p>
 </li>
-<li>
-<p>打开<strong>网络-&gt;接口-&gt;LAN-&gt;DHCP服务器-&gt;ipv6设置</strong>下 总是广播默认路由 选项</p>
-</li>
-<li>
-<p>在<strong>网络-&gt;防火墙-&gt;自定义规则</strong>下添加以下规则</p>
-<p>ip6tables -t nat -A POSTROUTING -o eth0.2 -j MASQUERADE<br>
-ip6tables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT<br>
-ip6tables -A FORWARD -i br-lan -j ACCEPT</p>
-</li>
-<li>
-<p><code>vi /etc/config/network</code><br>
-在config interface 'lan’下添加<code>option ip6addr 'fc00:192:168:113::1/64'</code></p>
-</li>
-<li>
-<p>获取ipv6网关,开头为WAN口获取到的ipv6地址的前4段,一般为<code>2001:250:3002:xxxx::1</code><br>
-或者<code>tracepath6 -n ipv6.google.com</code>第一列出现的地址即为网关.</p>
-</li>
-<li>
-<p>在<code>/etc/hotplug.d/iface</code>下添加文件<code>90-ipv6</code><br>
-内容为:</p>
+<li><p><code>opkg update</code><br><code>opkg install iputils-tracepath6</code> ,可以trace ipv6地址获取网关.</p>
 </li>
 </ul>
-<pre class="highlight"><code class="">  	#!/bin/sh
-  	[ &quot;$ACTION&quot; = ifup ] || exit 0
-  	route -A inet6 add default gw 2001:250:3002:xxxx::1
-</code></pre>
-<p>并给予权限<br>
-<code>chmod +x /etc/hotplug.d/iface/90-ipv6</code></p>
-<ul>
+<h3 id="ipv6配置"><a href="#ipv6配置" class="headerlink" title="ipv6配置"></a>ipv6配置</h3><ul>
+<li>删除<strong>网络-&gt;接口</strong>的 IPv6 ULA前缀</li>
+<li>打开<strong>网络-&gt;接口-&gt;LAN-&gt;DHCP服务器-&gt;ipv6设置</strong>下 总是广播默认路由 选项</li>
+<li><p>在<strong>网络-&gt;防火墙-&gt;自定义规则</strong>下添加以下规则</p>
+<pre><code>ip6tables -t nat -A POSTROUTING -o eth0.2 -j MASQUERADE
+ip6tables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+ip6tables -A FORWARD -i br-lan -j ACCEPT
+</code></pre></li>
+<li><code>vi /etc/config/network</code><br>在config interface ‘lan’下添加<code>option ip6addr &#39;fc00:192:168:113::1/64&#39;</code></li>
+<li>获取ipv6网关,开头为WAN口获取到的ipv6地址的前4段,一般为<code>2001:250:3002:xxxx::1</code><br>或者<code>tracepath6 -n ipv6.google.com</code>第一列出现的地址即为网关.</li>
+<li>在<code>/etc/hotplug.d/iface</code>下添加文件<code>90-ipv6</code><br>内容为:<pre><code>#!/bin/sh
+[ &quot;$ACTION&quot; = ifup ] || exit 0
+route -A inet6 add default gw 2001:250:3002:xxxx::1
+</code></pre>并给予权限<br><code>chmod +x /etc/hotplug.d/iface/90-ipv6</code></li>
 <li>重启,一段时间后观察<strong>总览-&gt;IPv6 WAN状态</strong>是否获得ipv6地址.有时会需要较长时间.然后测试ipv6是否成功:<a href="http://test-ipv6.com/" target="_blank" rel="external">test-ipv6.com</a>.</li>
 </ul>
-<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
-<hr>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><hr>
 <ul>
 <li>自带SS可以使用,但仍建议在PC上启用SS.速度更快,特别是在使用ipv6的情况下.</li>
 <li>PC上SS开启 允许来自局域网的连接. 手机连接wifi可以使用http代理,地址为该PC地址,如<code>192.168.1.xxx</code>端口为SS本地端口.</li>
@@ -246,7 +208,7 @@ ip6tables -A FORWARD -i br-lan -j ACCEPT</p>
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#实现"><span class="toc-number">1.</span> <span class="toc-text"> 实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备"><span class="toc-number">2.</span> <span class="toc-text"> 准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">3.</span> <span class="toc-text"> 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#h3c认证"><span class="toc-number">3.1.</span> <span class="toc-text"> h3c认证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基本配置非必须"><span class="toc-number">3.2.</span> <span class="toc-text"> 基本配置(非必须)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ipv6配置"><span class="toc-number">3.3.</span> <span class="toc-text"> ipv6配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">4.</span> <span class="toc-text"> 总结</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#实现"><span class="toc-number">1.</span> <span class="toc-text">实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#准备"><span class="toc-number">2.</span> <span class="toc-text">准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">3.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#h3c认证"><span class="toc-number">3.1.</span> <span class="toc-text">h3c认证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基本配置-非必须"><span class="toc-number">3.2.</span> <span class="toc-text">基本配置(非必须)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ipv6配置"><span class="toc-number">3.3.</span> <span class="toc-text">ipv6配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">4.</span> <span class="toc-text">总结</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
